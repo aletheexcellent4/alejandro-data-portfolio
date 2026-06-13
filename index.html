@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro Espinoza | Data Analyst Portfolio</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(135deg, #111827, #1e3a8a);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto 25px;
+      color: #dbeafe;
+      font-size: 1.1rem;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: white;
+      color: #111827;
+      font-weight: bold;
+      border: 1px solid transparent;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: white;
+      border-color: rgba(255,255,255,0.45);
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .nav-inner {
+      max-width: 1050px;
+      margin: auto;
+      padding: 13px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 55px 20px;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    .intro {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .card p { color: var(--muted); margin-bottom: 13px; }
+
+    .tag-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: #eff6ff;
+      color: #1e40af;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: bold;
+    }
+
+    ul { padding-left: 20px; color: var(--muted); }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .skill-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .skill-box h3 { margin-bottom: 8px; font-size: 1rem; }
+    .skill-box p { color: var(--muted); font-size: 0.95rem; }
+
+    .experience-item {
+      border-left: 4px solid var(--accent);
+      padding-left: 18px;
+      margin-bottom: 26px;
+    }
+
+    .experience-item h3 { margin-bottom: 2px; }
+    .experience-item .meta { color: var(--muted); margin-bottom: 8px; font-size: 0.95rem; }
+
+    .contact {
+      text-align: center;
+      background: #111827;
+      color: white;
+      border-radius: 22px;
+      padding: 38px 22px;
+    }
+
+    .contact p { color: #d1d5db; margin-bottom: 16px; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 24px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 850px) {
+      .grid, .skills { grid-template-columns: 1fr; }
+      header h1 { font-size: 2.1rem; }
+      section { padding: 42px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alejandro Espinoza</h1>
+    <p>Entry-Level Data Analyst focused on Excel, SQL, Tableau, financial analysis, and turning messy data into clear business insights.</p>
+    <div class="btn-group">
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn secondary" href="mailto:alejandro.espinoza415@gmail.com">Contact Me</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/aespinoza4/" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="intro">
+      <p>I’m a Business Management Economics graduate from UC Merced building a career in data analytics. My background combines banking, finance, and data projects where I’ve used Excel, SQL, and Tableau to clean data, track performance, and create dashboards that support better decision-making.</p>
+      <br>
+      <p>I’m especially interested in entry-level data analyst, business analyst, and reporting analyst roles where I can combine technical skills with real-world business understanding.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Bank KPI Dashboard</h3>
+        <p>Built Tableau dashboards from teller transaction data to track branch activity, transaction volume, and performance patterns.</p>
+        <ul>
+          <li>Organized and cleaned Excel transaction records.</li>
+          <li>Created visual summaries for KPI tracking.</li>
+          <li>Focused on accuracy, usability, and business insight.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Excel</span><span class="tag">Tableau</span><span class="tag">KPI Reporting</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>NYPD Arrests Data Analysis</h3>
+        <p>Analyzed a large public dataset to identify arrest trends across time, demographics, and categories.</p>
+        <ul>
+          <li>Cleaned and explored 50,000+ rows of data.</li>
+          <li>Used Excel and Tableau to summarize key trends.</li>
+          <li>Translated raw data into clear visual insights.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Excel</span><span class="tag">Tableau</span><span class="tag">Data Cleaning</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>M&A Financial Analysis</h3>
+        <p>Used five years of sales and operating expense data to analyze business performance and support financial projections.</p>
+        <ul>
+          <li>Built Excel-based projections using formulas and references.</li>
+          <li>Analyzed revenue and expense trends.</li>
+          <li>Supported valuation work using business metrics.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Excel</span><span class="tag">Finance</span><span class="tag">Forecasting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill-box">
+        <h3>Excel</h3>
+        <p>Pivot tables, VLOOKUP, formulas, conditional formatting, data cleaning.</p>
+      </div>
+      <div class="skill-box">
+        <h3>SQL</h3>
+        <p>Filtering, joins, grouping, aggregations, basic query writing.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Tableau</h3>
+        <p>Dashboards, visual analysis, KPI reporting, storytelling with data.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Business Analysis</h3>
+        <p>Financial data, banking operations, customer data, reporting support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Universal Banker — Mechanics Bank</h3>
+      <div class="meta">Richmond, CA | Apr 2025 – Present</div>
+      <ul>
+        <li>Processed 50+ daily customer transactions while maintaining accuracy, compliance, and service quality.</li>
+        <li>Used customer and transaction information to support issue resolution, reporting, and branch operations.</li>
+        <li>Created Excel tracking sheets and Tableau visualizations to summarize branch KPI data.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Finance Intern — Conard House Inc.</h3>
+      <div class="meta">San Francisco, CA</div>
+      <ul>
+        <li>Supported finance reporting using Excel and Sage Intacct.</li>
+        <li>Helped clean financial data, organize account information, and prepare reports for review.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Data Analytics Fellow — COOP Careers</h3>
+      <div class="meta">Completed Dec 2024</div>
+      <ul>
+        <li>Completed 200 hours of training and projects in Excel, SQL, and Tableau.</li>
+        <li>Analyzed large datasets and created visualizations to communicate findings.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Let’s Connect</h2>
+      <p>I’m currently seeking entry-level Data Analyst, Business Analyst, and Reporting Analyst opportunities.</p>
+      <div class="btn-group">
+        <a class="btn" href="mailto:alejandro.espinoza415@gmail.com">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/aespinoza4/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Alejandro Espinoza. Built for data analytics portfolio use.
+  </footer>
+</body>
+</html>
